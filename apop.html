@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Pop - World Pop Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0d6efd;
+            --secondary-blue: #6c757d;
+            --light-blue: #e7f1ff;
+            --text-dark: #212121;
+            --text-light: #424242;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: var(--primary-blue) !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: var(--secondary-blue) !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-blue) !important;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080/455a64/ffffff?text=American+Pop') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        #hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #hero p {
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Styles */
+        .content-section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        /* Artist Card */
+        .artist-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: var(--light-blue);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e9ecef;
+            color: var(--secondary-blue);
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">🌏 World Pop Music</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">K-pop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="apop.html">미국 팝</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jpop.html">J-pop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ukpop.html">UK-pop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <h1 class="display-4">American Pop</h1>
+                <p class="lead">전 세계를 선도하는 팝의 중심</p>
+            </div>
+        </section>
+
+        <!-- A-pop Section -->
+        <section id="apop" class="content-section">
+            <div class="container">
+                <h2 class="section-title">🎤 미국 팝 아티스트</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card artist-card">
+                            <img src="https://via.placeholder.com/480x720/000000/FFFFFF?text=Taylor+Swift" class="card-img-top" alt="Taylor Swift">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Taylor Swift</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card artist-card">
+                            <img src="https://via.placeholder.com/480x720/000000/FFFFFF?text=Ariana+Grande" class="card-img-top" alt="Ariana Grande">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Ariana Grande</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card artist-card">
+                            <img src="https://via.placeholder.com/480x720/000000/FFFFFF?text=The+Weeknd" class="card-img-top" alt="The Weeknd">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">The Weeknd</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h2 class="section-title">💌 Contact Us</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 World Pop Music. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
